@@ -58,6 +58,7 @@ You choose a **lane** by adding a `workflow: *` label to an issue. ✋ marks the
 These conventions apply to every change, including the bot's:
 
 - TypeScript (strict), ES modules, no runtime dependencies.
+- Amounts are integers in minor units (cents): `1050` is €10.50. Never floats.
 - Pure functions only: no I/O, no global state, no dates or randomness unless passed in.
 - Every behavior has a [Vitest](https://vitest.dev) test next to the code (`src/**/*.test.ts`).
 - `npm test`, `npm run lint` and `npm run typecheck` must pass before a PR is opened.

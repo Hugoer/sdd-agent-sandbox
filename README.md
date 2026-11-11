@@ -134,3 +134,7 @@ are left for Grill Me and the spec on purpose.
 ## License
 
 [MIT](LICENSE)
+
+
+## Smoke test
+Smoke test branch for sdd-agent spec 3 (github-providers): the bot opens a PR from here and adds a `Quality Gate` check run.

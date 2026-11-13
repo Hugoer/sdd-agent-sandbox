@@ -1,3 +1,13 @@
 {
-  "skills": {}
+  "skills": {
+    "grill": ".github-agent/skills/grill",
+    "spec": ".github-agent/skills/spec",
+    "plan": ".github-agent/skills/plan",
+    "code": ".github-agent/skills/code",
+    "qualityGate": ".github-agent/skills/quality-gate"
+  },
+  "models": {
+    "standard": { "default": "gemini-4-argon" },
+    "max": { "default": "gemini-4-carbon" }
+  }
 }

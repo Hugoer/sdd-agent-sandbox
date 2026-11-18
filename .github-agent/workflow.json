@@ -7,7 +7,7 @@
     "qualityGate": ".github-agent/skills/quality-gate"
   },
   "models": {
-    "standard": { "default": "gemini-4-hydrogen" },
+    "standard": { "default": "gemini-4-carbon" },
     "max": { "default": "gemini-4-carbon" }
   }
 }

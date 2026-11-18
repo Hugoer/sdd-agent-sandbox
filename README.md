@@ -46,7 +46,7 @@ You choose a **lane** by adding a `workflow: *` label to an issue. ✋ marks the
 | Label | Set by | Meaning |
 |---|---|---|
 | `workflow: full-sdd`, `workflow: spec-code`, `workflow: code-only` | humans | Starts a run in that lane |
-| `grill: skip` | humans | Skip Grill Me (read only when a run starts) |
+| `grill: skip` | humans | Skip Grill Me; added while the bot is asking, it stops the questions |
 | `status: draft`, `grilling`, `spec-review`, `ready-for-dev`, `executing`, `in-review`, `needs-human` | the bot only | Where the issue is |
 
 - **Restart:** remove the `workflow: *` label and add it again. This cancels the run and starts from scratch. It's
@@ -63,8 +63,10 @@ These conventions apply to every change, including the bot's:
 - Every behavior has a [Vitest](https://vitest.dev) test next to the code (`src/**/*.test.ts`).
 - `npm test`, `npm run lint` and `npm run typecheck` must pass before a PR is opened.
 - The public API is exported from `src/index.ts`.
-- Step skills (how each workflow step should behave in this repo) live in `.github-agent/workflow.json`. It's empty
-  for now, so every step uses the bot's built-in prompt.
+- Step skills (how each workflow step should behave in this repo) and each step's model are set in
+  `.github-agent/workflow.json`, one skill folder per step under `.github-agent/skills/`. The `grill` skill is adapted
+  from `interview-me` (see `.github-agent/skills/THIRD-PARTY-NOTICES.md`); the other steps have placeholders until
+  their skills are written.
 
 ```sh
 nvm use            # Node 24 (.nvmrc)

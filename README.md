@@ -49,8 +49,10 @@ You choose a **lane** by adding a `workflow: *` label to an issue. ✋ marks the
 | `grill: skip` | humans | Skip Grill Me; added while the bot is asking, it stops the questions |
 | `status: draft`, `grilling`, `spec-review`, `ready-for-dev`, `executing`, `in-review`, `needs-human` | the bot only | Where the issue is |
 
-- **Restart:** remove the `workflow: *` label and add it again. This cancels the run and starts from scratch. It's
-  also the only way out of `status: needs-human`.
+- **Restart:** remove the `workflow: *` label and add it again. This cancels the run (the bot posts your Grill Me
+  answers so far, ready to copy) and starts from scratch.
+- **`status: needs-human`:** the run stopped, and the bot's comment says why. Comment `/retry` once the cause is
+  fixed, or restart (the only way after the Grill round limit).
 - **Never** set `status: *` labels by hand: the bot owns them.
 
 ## Project conventions

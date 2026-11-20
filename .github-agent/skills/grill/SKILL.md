@@ -16,7 +16,7 @@ close the gap fastest.
 You work on a GitHub issue, not in a live chat. A reply can take hours, so one comment may hold several questions,
 and every question carries your guess at the answer.
 
-When the issue splits, rounds or shows money, load the repo skill `money-rules` before you judge it.
+Before anything else, load the repo skill `tax-rules` and the file `CLAUDE.md`.
 
 ## 1. Hypothesize, with an honest confidence
 

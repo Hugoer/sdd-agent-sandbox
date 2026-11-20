@@ -6,7 +6,6 @@
     "code": ".github-agent/skills/code",
     "qualityGate": ".github-agent/skills/quality-gate"
   },
-  "repoSkills": [".claude/skills"],
   "models": {
     "standard": { "default": "gemini-4-carbon" },
     "max": { "default": "gemini-4-carbon" }

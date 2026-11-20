@@ -57,18 +57,15 @@ You choose a **lane** by adding a `workflow: *` label to an issue. ✋ marks the
 
 ## Project conventions
 
-These conventions apply to every change, including the bot's:
+The conventions for every change, including the bot's, are in [`AGENTS.md`](AGENTS.md); `src/AGENTS.md` adds the
+rules for the library's code. sdd-agent puts the root `AGENTS.md` in every prompt and lists the others, like the
+skills in `.claude/skills/` (such as `money-rules`), for the model to load when an issue needs them.
+`CLAUDE.md` is a canary: sdd-agent never reads it, so its text must never show up in a bot comment.
 
-- TypeScript (strict), ES modules, no runtime dependencies.
-- Amounts are integers in minor units (cents): `1050` is €10.50. Never floats.
-- Pure functions only: no I/O, no global state, no dates or randomness unless passed in.
-- Every behavior has a [Vitest](https://vitest.dev) test next to the code (`src/**/*.test.ts`).
-- `npm test`, `npm run lint` and `npm run typecheck` must pass before a PR is opened.
-- The public API is exported from `src/index.ts`.
 - Step skills (how each workflow step should behave in this repo) and each step's model are set in
   `.github-agent/workflow.json`, one skill folder per step under `.github-agent/skills/`. The `grill` skill is adapted
   from `interview-me` (see `.github-agent/skills/THIRD-PARTY-NOTICES.md`); the other steps have placeholders until
-  their skills are written.
+  their skills are written. `repoSkills` in the same file names the folders of the repo's own skills.
 
 ```sh
 nvm use            # Node 24 (.nvmrc)

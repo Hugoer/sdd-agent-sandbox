@@ -1,0 +1,11 @@
+# split-the-bill: conventions
+
+These conventions apply to every change in this repository, by people and coding agents alike. A folder may have
+its own `AGENTS.md` with rules for the files under it.
+
+- TypeScript (strict), ES modules, no runtime dependencies.
+- Amounts are integers in minor units (cents): `1050` is €10.50. Never floats.
+- Pure functions only: no I/O, no global state, no dates or randomness unless passed in.
+- Every behavior has a [Vitest](https://vitest.dev) test next to the code (`src/**/*.test.ts`).
+- `npm test`, `npm run lint` and `npm run typecheck` must pass before a PR is opened.
+- The public API is exported from `src/index.ts`.

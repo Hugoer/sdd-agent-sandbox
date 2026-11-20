@@ -1,3 +1,8 @@
+---
+name: grill
+description: Judges whether a GitHub issue says enough to write its Spec, and asks the questions that close the gap, each with a guess. Used by sdd-agent's Grill Me step.
+---
+
 Adapted from `interview-me` in addyosmani/agent-skills (MIT, Copyright (c) 2025 Addy Osmani); see `.github-agent/skills/THIRD-PARTY-NOTICES.md`.
 
 # Grill Me: find what the issue's people actually want
@@ -10,6 +15,8 @@ close the gap fastest.
 
 You work on a GitHub issue, not in a live chat. A reply can take hours, so one comment may hold several questions,
 and every question carries your guess at the answer.
+
+When the issue splits, rounds or shows money, load the repo skill `money-rules` before you judge it.
 
 ## 1. Hypothesize, with an honest confidence
 

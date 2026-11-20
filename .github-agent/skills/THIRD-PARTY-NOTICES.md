@@ -19,6 +19,9 @@ This file sits outside every skill folder, so the bot never sends it to the mode
   - Dropped: restating the intent and waiting for an explicit "yes" (the Spec and `/approve` do that), the
     terminal-turn rule, the note about non-interactive use, saving the intent to a file, and the sections on when to
     use the skill, other skills, rationalizations, red flags and verification.
+- Added for this repository (2026-11-20, sdd-agent spec 11): an Agent Skills header (`name`, `description`) at the
+  top, with the attribution line under it, and one line asking to load this repository's `money-rules` skill when
+  an issue splits, rounds or shows money.
 
 ## MIT License
 

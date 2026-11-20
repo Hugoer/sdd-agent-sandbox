@@ -1,5 +1,5 @@
 ---
-name: spec
+name: Spec
 description: How sdd-agent writes an issue's Spec in this repository. A placeholder until sdd-agent spec 7 writes it.
 ---
 

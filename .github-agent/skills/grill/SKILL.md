@@ -16,7 +16,7 @@ close the gap fastest.
 You work on a GitHub issue, not in a live chat. A reply can take hours, so one comment may hold several questions,
 and every question carries your guess at the answer.
 
-When the issue splits, rounds or shows money, load the repo skill `money-rules` before you judge it.
+When the issue splits, rounds or shows money, load the repo skill `money-rules` and then its file `.claude/skills/money-rules/references/rounding.md` before you judge it.
 
 ## 1. Hypothesize, with an honest confidence
 

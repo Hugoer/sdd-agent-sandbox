@@ -27,3 +27,4 @@ These rules hold for every amount in split-the-bill: in the code, the tests, the
   `Math.floor((cents * basisPoints + 5000) / 10000)`.
 
 Worked examples of splits and percentages, with the arithmetic step by step: `references/rounding.md`.
+UNMERGED-MARKER: this line is only on an unmerged branch.

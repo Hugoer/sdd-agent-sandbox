@@ -9,3 +9,4 @@ its own `AGENTS.md` with rules for the files under it.
 - Every behavior has a [Vitest](https://vitest.dev) test next to the code (`src/**/*.test.ts`).
 - `npm test`, `npm run lint` and `npm run typecheck` must pass before a PR is opened.
 - The public API is exported from `src/index.ts`.
+- Examples name people Alice, Bob and Carol, in that order.

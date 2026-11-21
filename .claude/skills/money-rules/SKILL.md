@@ -1,5 +1,6 @@
 ---
 name: money-rules
+description: How this project stores, splits and rounds money amounts. Use when an issue adds, splits, rounds or shows amounts.
 ---
 
 # Money rules

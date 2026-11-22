@@ -23,6 +23,29 @@ This file sits outside every skill folder, so the bot never sends it to the mode
   top, with the attribution line under it, and one line asking to load this repository's `money-rules` skill when
   an issue splits, rounds or shows money.
 
+## `spec/SKILL.md`, adapted from `spec-driven-development`
+
+- Source: `skills/spec-driven-development/SKILL.md` in
+  [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills), version 0.6.16.
+- License: MIT, below.
+- Changed for sdd-agent's Spec step, which posts the Spec as an issue comment for people to edit and approve
+  (2026-11-22, sdd-agent spec 7):
+  - Kept: the Spec as the shared source of truth for what to build, why, and how we'll know it's done; surfacing
+    assumptions instead of filling gaps silently; reframing vague wishes as specific, testable success criteria;
+    the Always / Ask first / Never boundaries; out of scope (deferred), one line each; open questions; "a short
+    Spec is fine" for simple work.
+  - Changed: the sections are objective, assumptions, behavior, success criteria, a manual verification matrix
+    (precondition, action, expected result; negative cases and invariants), boundaries, out of scope and open
+    questions; commands, project structure, code style and testing point to this repository's `AGENTS.md` instead
+    of being written in each Spec; reading the code before saying what changes; a bill-splitting example; a "When
+    updating" section for a Spec brought up to date with new code.
+  - Dropped: the gated phases (plan, tasks, implement), the capability map, the clarifying questions (Grill Me asks
+    them), "stop your turn", saving, naming or committing the Spec as a file, delta specs and version labels, and
+    the sections on when to use the skill, rationalizations, red flags and verification.
+- Added for this repository: an Agent Skills header (`name`, `description`) at the top, with the attribution line
+  under it, and the line asking to load this repository's `money-rules` skill when an issue splits, rounds or shows
+  money.
+
 ## MIT License
 
 Copyright (c) 2025 Addy Osmani

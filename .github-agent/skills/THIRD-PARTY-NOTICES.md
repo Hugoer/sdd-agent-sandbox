@@ -46,6 +46,29 @@ This file sits outside every skill folder, so the bot never sends it to the mode
   under it, and the line asking to load this repository's `money-rules` skill when an issue splits, rounds or shows
   money.
 
+## `plan/SKILL.md`, adapted from `planning-and-task-breakdown`
+
+- Source: `skills/planning-and-task-breakdown/SKILL.md` in
+  [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills), version 0.6.16.
+- License: MIT, below.
+- Changed for sdd-agent's Plan step, which posts the Plan as an issue comment, written from the approved Spec, for
+  people to edit and approve (2026-11-23, sdd-agent spec 7):
+  - Kept: small tasks a coding agent can finish in one focused session, each leaving the code working;
+    dependency order, foundations first; vertical slices over horizontal layers; each task's description,
+    acceptance criteria, verification and the files it touches; the sizing signs that a task is two (more than
+    about five files, more than three acceptance bullets, "and" in its title); checkpoints after every two or three
+    tasks; a risks table.
+  - Changed: the files are real paths, read with the bot's tools before they are named; verification uses this
+    repository's commands from its `AGENTS.md`; each acceptance criterion traces to the approved Spec; one Markdown
+    document with an overview, the tasks with their checkpoints, and the risks; a bill-splitting example; a "When
+    updating" section for a Plan brought up to date with new code.
+  - Dropped: plan mode, saving the plan and the task list as files (`tasks/plan.md`, `tasks/todo.md`), external
+    trackers, the rule about overwriting an earlier plan, phases, architecture decisions and open questions as
+    their own sections, parallel agents, the size table, and the sections on when to use the skill,
+    rationalizations, red flags and verification.
+- Added for this repository: an Agent Skills header (`name`, `description`) at the top, with the attribution line
+  under it.
+
 ## MIT License
 
 Copyright (c) 2025 Addy Osmani

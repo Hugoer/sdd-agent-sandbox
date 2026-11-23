@@ -8,7 +8,7 @@
   },
   "repoSkills": [".claude/skills"],
   "models": {
-    "standard": { "default": "gemini-4-carbon" },
+    "standard": { "default": "gemini-4-carbon", "spec": "gemini-no-such-model" },
     "max": { "default": "gemini-4-carbon" }
   }
 }

@@ -22,8 +22,9 @@ issue opened ──► GitHub App webhook ──► sdd-agent (NestJS, on the de
   comments.
 - The bot writes code only on its own `agent/*` branches and opens a PR. A human merges it.
 
-> **Current state:** the bot is a walking skeleton (sdd-agent spec 1). It replies to every new issue with a
-> "hello" comment, and nothing else yet. The workflow below arrives with sdd-agent specs 2–10.
+> **Current state:** the bot runs every step up to the code (sdd-agent specs 1–7 and 11): it asks Grill Me's
+> questions, then writes the Spec and the Plan as comments you edit and `/approve`. The Coder and the Quality Gate
+> arrive with sdd-agent specs 8–10; until then, the last `/approve` stops the run with one comment saying so.
 
 ## The workflow
 
@@ -138,6 +139,3 @@ are left for Grill Me and the spec on purpose.
 ## License
 
 [MIT](LICENSE)
-
-Amounts are always whole cents; see the `money-rules` skill.
-Splits never use floating point.

@@ -37,7 +37,10 @@ You choose a **lane** by adding a `workflow: *` label to an issue. ✋ marks the
 | `workflow: code-only` | Go-signal ✋ → Coder → Quality Gate | Small, precisely described fixes |
 
 - **Grill Me:** the bot asks clarifying questions as an issue comment. Answer by commenting on the issue.
-- **Spec / Plan:** the bot posts a document. Reply `/approve` to accept it, or comment to ask for changes.
+- **Spec / Plan:** the bot posts each as an issue comment. To change it, edit that comment: the text between its
+  hidden markers is what gets approved, and comments on the issue don't change it. `/approve` (write access)
+  accepts it as it reads then; `/refresh` checks it against today's `main`; `/restore` brings back one that was
+  deleted.
 - **Coder:** the bot implements the change on an `agent/*` branch, runs lint and tests, and opens a PR.
 - **Quality Gate:** a separate review of the PR, posted as a PR comment and a check run.
 

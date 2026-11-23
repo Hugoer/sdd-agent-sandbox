@@ -137,3 +137,4 @@ are left for Grill Me and the spec on purpose.
 [MIT](LICENSE)
 
 Amounts are always whole cents; see the `money-rules` skill.
+Splits never use floating point.

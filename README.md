@@ -135,3 +135,5 @@ are left for Grill Me and the spec on purpose.
 ## License
 
 [MIT](LICENSE)
+
+Amounts are always whole cents; see the `money-rules` skill.

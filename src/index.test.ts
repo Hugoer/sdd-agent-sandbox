@@ -1,6 +1,6 @@
 import { expect, it } from 'vitest';
-import { PACKAGE_NAME } from './index.js';
+import { LIB_NAME } from './index.js';
 
-it('exports the package name', () => {
-  expect(PACKAGE_NAME).toBe('split-the-bill');
+it('exports the library name', () => {
+  expect(LIB_NAME).toBe('split-the-bill');
 });

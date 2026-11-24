@@ -59,6 +59,9 @@ Write the Spec with these sections, in this order:
 - Ask first: <…>
 - Never: <…>
 
+## Risks
+<What could go wrong with this change, one line each, and how the code guards against it.>
+
 ## Out of scope (deferred)
 <Ideas left out of this version, one line each: what, and why it waits.>
 

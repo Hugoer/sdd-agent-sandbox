@@ -1,3 +1,4 @@
+// Spec 14 check: a comment line.
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 

@@ -139,5 +139,3 @@ are left for Grill Me and the spec on purpose.
 ## License
 
 [MIT](LICENSE)
-
-<!-- Spec 14 check: a comment line. -->

@@ -6,6 +6,14 @@
     "code": ".github-agent/skills/code",
     "qualityGate": ".github-agent/skills/quality-gate"
   },
+  "protectedPaths": [
+    "**/AGENTS.md",
+    "**/CLAUDE.md", "**/GEMINI.md", "**/.cursorrules", "**/.windsurfrules", "**/.cursor/**",
+    ".github/copilot-instructions.md",
+    ".github/workflows/**",
+    "**/.env", "**/.env.!(example)",
+    ".claude/skills/**"
+  ],
   "models": {
     "standard": { "default": "gemini-4-carbon" },
     "max": { "default": "gemini-4-carbon" }

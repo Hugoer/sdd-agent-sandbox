@@ -7,14 +7,6 @@
     "qualityGate": ".github-agent/skills/quality-gate"
   },
   "repoSkills": [".claude/skills"],
-  "protectedPaths": [
-    "**/AGENTS.md",
-    "**/CLAUDE.md", "**/GEMINI.md", "**/.cursorrules", "**/.windsurfrules", "**/.cursor/**",
-    ".github/copilot-instructions.md",
-    ".github/workflows/**",
-    "**/.env", "**/.env.!(example)",
-    ".claude/skills/**"
-  ],
   "models": {
     "standard": { "default": "gemini-4-hydrogen" },
     "max": { "default": "gemini-4-hydrogen" }

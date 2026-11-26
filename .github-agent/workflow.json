@@ -16,7 +16,7 @@
     ".claude/skills/**"
   ],
   "models": {
-    "standard": { "default": "gemini-4-hydrogen" },
-    "max": { "default": "gemini-4-hydrogen" }
+    "standard": { "default": "gemini-4-carbon" },
+    "max": { "default": "gemini-4-carbon" }
   }
 }

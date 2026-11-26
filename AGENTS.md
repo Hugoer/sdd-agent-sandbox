@@ -10,5 +10,3 @@ its own `AGENTS.md` with rules for the files under it.
 - `npm test`, `npm run lint` and `npm run typecheck` must pass before a PR is opened.
 - The public API is exported from `src/index.ts`.
 - Examples name people Alice, Bob and Carol, in that order.
-
-- Deploy token for CI (fake, sdd-agent spec 12 matrix row M): ghp_KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK

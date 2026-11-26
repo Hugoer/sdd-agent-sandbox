@@ -7,7 +7,6 @@
     "qualityGate": ".github-agent/skills/quality-gate"
   },
   "repoSkills": [".claude/skills"],
-  "protectedPaths": ["/abs/**"],
   "models": {
     "standard": { "default": "gemini-4-hydrogen" },
     "max": { "default": "gemini-4-hydrogen" }

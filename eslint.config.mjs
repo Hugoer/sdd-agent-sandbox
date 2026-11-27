@@ -6,4 +6,3 @@ export default tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommended,
 );
-// sdd-agent spec 13 matrix: a change to a file #94's Spec read (undone after the matrix)
